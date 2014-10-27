@@ -1,16 +1,26 @@
 {{outlet}}
 
+{{input type="text" value=filter}}
+
 <table class="table table-hover">
   <tr>
     <th>Hop</th>
+    {{#each aroma in aromas}}
+      <th>
+        {{aroma}}
+      </th>
+    {{/each}}
   </tr>
-  {{#each}}
+  {{#each hop in filteredContent}}
     <tr>
       <td>
-        <a href="#" tabindex="0" class="btn btn-primary" data-toggle="popover" data-trigger="hover" title="{{unbound name}}" data-content="{{unbound aroma}}">
-          {{name}}
+        <a href="#" tabindex="0" class="btn btn-primary" data-toggle="popover" data-trigger="hover" title="{{unbound hop.name}}" data-content="{{unbound hop.aroma}}">
+          {{hop.name}}
         </a>
       </td>
+      {{#each aroma in aromas}}
+        <td>{{hop-aroma hop aroma}}</td>
+      {{/each}}
     </tr>
   {{/each}}
 </table>
