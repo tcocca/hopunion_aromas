@@ -20,12 +20,12 @@ export default Ember.ArrayController.extend({
   filteredContent: function(){
     var filter = this.get('filter');
     var hops = this.get('arrangedContent');
-    if(filter == '') {
+    if(filter === '') {
       return hops;
     }
     else {
       return hops.filter(function(hop) {
-        return hop.get('primary_aroma') == filter || hop.get('secondary_aroma') == filter || hop.get('tertiary_aroma') == filter;
+        return hop.get('aroma_names').contains(filter);
       });
     }
   }.property('arrangedContent', 'filter', 'filters'),

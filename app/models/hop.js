@@ -5,7 +5,13 @@ var Hop = DS.Model.extend({
   aroma: DS.attr('string'),
   primary_aroma: DS.attr('string'),
   secondary_aroma: DS.attr('string'),
-  tertiary_aroma: DS.attr('string')
+  tertiary_aroma: DS.attr('string'),
+  
+  aroma_names: function() {
+    return [this.get('primary_aroma'), this.get('secondary_aroma'), this.get('tertiary_aroma')].filter(function(item) {
+      return item !== '' && item !== null && item !== undefined;
+    });
+  }.property('primary_aroma', 'secondary_aroma', 'tertiary_aroma')
 });
 
 Hop.reopenClass({
