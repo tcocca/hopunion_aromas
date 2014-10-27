@@ -2,7 +2,10 @@ import DS from 'ember-data';
 
 var Hop = DS.Model.extend({
   name: DS.attr('string'),
-  aroma: DS.attr('string')
+  aroma: DS.attr('string'),
+  primary_aroma: DS.attr('string'),
+  secondary_aroma: DS.attr('string'),
+  tertiary_aroma: DS.attr('string')
 });
 
 Hop.reopenClass({
@@ -35,7 +38,7 @@ Hop.reopenClass({
       "substitute_ids": [
         7
       ],
-      "teriary_aroma": "Tobacco/Earthy",
+      "tertiary_aroma": "Tobacco/Earthy",
       "toal_oil": "0.8 - 1.2 mL / 100g",
       "usage": "Aroma"
     },
@@ -71,7 +74,7 @@ Hop.reopenClass({
         9,
         40
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "1.5 - 1.9 mL / 100g",
       "usage": "Aroma"
     },
@@ -246,7 +249,7 @@ Hop.reopenClass({
         2,
         9
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "0.8 - 1.5 mL / 100g",
       "usage": "Aroma"
     },
@@ -269,7 +272,7 @@ Hop.reopenClass({
       "product_id": null,
       "secondary_aroma": "Fruity",
       "storage": "~75%",
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "1.2 - 1.4 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -373,7 +376,7 @@ Hop.reopenClass({
         33,
         34
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "1.5 - 2.5 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -399,7 +402,7 @@ Hop.reopenClass({
       "styles": [
         "IPA"
       ],
-      "teriary_aroma": "Tropical-Fruit",
+      "tertiary_aroma": "Tropical-Fruit",
       "toal_oil": "2.2 - 2.8 mL / 100g",
       "usage": "Aroma"
     },
@@ -587,7 +590,7 @@ Hop.reopenClass({
       "primary_aroma": "Citrus",
       "product_id": "HBC 366 cv.",
       "secondary_aroma": "Tropical-Fruit",
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "2.9 mL / 100g",
       "usage": "Aroma"
     },
@@ -694,7 +697,7 @@ Hop.reopenClass({
         15,
         34
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "0.9 - 1.2 mL / 100g",
       "usage": "Bittering"
     },
@@ -728,7 +731,7 @@ Hop.reopenClass({
         50,
         99
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.7 - 1.6 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -809,7 +812,7 @@ Hop.reopenClass({
         92,
         94
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.6 - 1.5 mL / 100g",
       "usage": "Aroma"
     },
@@ -946,7 +949,7 @@ Hop.reopenClass({
         34,
         43
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "1.8 - 2.2 mL / 100g",
       "usage": "Bittering"
     },
@@ -972,7 +975,7 @@ Hop.reopenClass({
       "styles": [
         "IPA"
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "1.0 - 1.5 mL / 100g",
       "usage": "Aroma"
     },
@@ -1008,7 +1011,7 @@ Hop.reopenClass({
         76,
         78
       ],
-      "teriary_aroma": "Spicy",
+      "tertiary_aroma": "Spicy",
       "toal_oil": "1.6 - 3.4 mL / 100g",
       "usage": "Aroma"
     },
@@ -1043,7 +1046,7 @@ Hop.reopenClass({
         20,
         24
       ],
-      "teriary_aroma": "Spicy",
+      "tertiary_aroma": "Spicy",
       "toal_oil": "0.2 - 0.5 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1213,7 +1216,7 @@ Hop.reopenClass({
       "substitute_ids": [
         50
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "1.4 - 1.6 mL / 100g",
       "usage": "Aroma"
     },
@@ -1249,7 +1252,7 @@ Hop.reopenClass({
         83,
         85
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.7 - 0.9 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1320,7 +1323,7 @@ Hop.reopenClass({
         93,
         88
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "1.3 - 1.7 mL / 100g",
       "usage": "Aroma"
     },
@@ -1354,7 +1357,7 @@ Hop.reopenClass({
         27,
         43
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "2.0 - 2.5 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1379,7 +1382,7 @@ Hop.reopenClass({
       "styles": [
         "Pale Ale"
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "2.0 - 2.8 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1413,7 +1416,7 @@ Hop.reopenClass({
         53,
         95
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "1.3 - 1.9 mL / 100g",
       "usage": "Aroma"
     },
@@ -1451,7 +1454,7 @@ Hop.reopenClass({
         40,
         49
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "1.5 - 2.5 mL / 100g",
       "usage": "Bittering"
     },
@@ -1474,7 +1477,7 @@ Hop.reopenClass({
       "product_id": null,
       "secondary_aroma": "Cedar",
       "storage": "~75%",
-      "teriary_aroma": "Pine",
+      "tertiary_aroma": "Pine",
       "toal_oil": "1.0 - 2.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -1643,7 +1646,7 @@ Hop.reopenClass({
         27,
         34
       ],
-      "teriary_aroma": "Pine",
+      "tertiary_aroma": "Pine",
       "toal_oil": "1.0 - 2.0 mL / 100g",
       "usage": "Bittering"
     },
@@ -1722,7 +1725,7 @@ Hop.reopenClass({
       "primary_aroma": "Herbal",
       "product_id": null,
       "secondary_aroma": "Floral",
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "0.9 - 1.3 mL / 100g",
       "usage": "Aroma"
     },
@@ -1757,7 +1760,7 @@ Hop.reopenClass({
         42,
         95
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "0.4 - 1.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -1782,7 +1785,7 @@ Hop.reopenClass({
       "styles": [
         "Lager"
       ],
-      "teriary_aroma": "Tropical-Fruit",
+      "tertiary_aroma": "Tropical-Fruit",
       "toal_oil": "0.8 - 1.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -1817,7 +1820,7 @@ Hop.reopenClass({
         69,
         58
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "1.0 - 1.7 mL / 100g",
       "usage": "Bittering"
     },
@@ -1839,7 +1842,7 @@ Hop.reopenClass({
       "primary_aroma": "Floral",
       "product_id": null,
       "secondary_aroma": "Spicy",
-      "teriary_aroma": "Grassy",
+      "tertiary_aroma": "Grassy",
       "toal_oil": "1.4 - 2.0 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1872,7 +1875,7 @@ Hop.reopenClass({
         59,
         66
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "0.7 - 1.2 mL / 100g",
       "usage": "Aroma"
     },
@@ -1905,7 +1908,7 @@ Hop.reopenClass({
         33,
         85
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "1.0 - 1.5 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1938,7 +1941,7 @@ Hop.reopenClass({
         23,
         66
       ],
-      "teriary_aroma": "Tobacco/Earthy",
+      "tertiary_aroma": "Tobacco/Earthy",
       "toal_oil": "0.4 - 0.8 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -1971,7 +1974,7 @@ Hop.reopenClass({
         17,
         59
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "0.7 - 1.7 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -2038,7 +2041,7 @@ Hop.reopenClass({
         33,
         58
       ],
-      "teriary_aroma": "Pine",
+      "tertiary_aroma": "Pine",
       "toal_oil": "1.2 - 2.2 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -2071,7 +2074,7 @@ Hop.reopenClass({
         62,
         58
       ],
-      "teriary_aroma": "Spicy",
+      "tertiary_aroma": "Spicy",
       "toal_oil": "1.2 - 2.5 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -2104,7 +2107,7 @@ Hop.reopenClass({
         69,
         58
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "1.0 - 1.8 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -2135,7 +2138,7 @@ Hop.reopenClass({
       "substitute_ids": [
         59
       ],
-      "teriary_aroma": "Cedar",
+      "tertiary_aroma": "Cedar",
       "toal_oil": "0.8 - 1.8 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -2168,7 +2171,7 @@ Hop.reopenClass({
         20,
         59
       ],
-      "teriary_aroma": "Tobacco/Earthy",
+      "tertiary_aroma": "Tobacco/Earthy",
       "toal_oil": "0.8 - 1.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -2193,7 +2196,7 @@ Hop.reopenClass({
       "styles": [
         "Pale Ale"
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.6 - 1.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -2245,7 +2248,7 @@ Hop.reopenClass({
         20,
         50
       ],
-      "teriary_aroma": "Spicy",
+      "tertiary_aroma": "Spicy",
       "toal_oil": "1.2 - 1.8 mL / 100g",
       "usage": "Bittering"
     },
@@ -2278,7 +2281,7 @@ Hop.reopenClass({
         59,
         66
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.8 - 1.2 mL / 100g",
       "usage": "Aroma"
     },
@@ -2315,7 +2318,7 @@ Hop.reopenClass({
         24,
         45
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "1.2 - 1.6 mL / 100g",
       "usage": "Aroma"
     },
@@ -2352,7 +2355,7 @@ Hop.reopenClass({
         30,
         78
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "0.6 - 0.8 mL / 100g",
       "usage": "Aroma"
     },
@@ -2389,7 +2392,7 @@ Hop.reopenClass({
         11,
         40
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "1.5 - 2.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -2448,7 +2451,7 @@ Hop.reopenClass({
       "styles": [
         "American-style Ale"
       ],
-      "teriary_aroma": "Grassy",
+      "tertiary_aroma": "Grassy",
       "toal_oil": "1.2 - 1.5 mL / 100g",
       "usage": "Aroma"
     },
@@ -2483,7 +2486,7 @@ Hop.reopenClass({
         48,
         94
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "0.7 - 1.3 mL / 100g",
       "usage": "Aroma"
     },
@@ -2508,7 +2511,7 @@ Hop.reopenClass({
       "styles": [
         "German-style Ales"
       ],
-      "teriary_aroma": "Pine",
+      "tertiary_aroma": "Pine",
       "toal_oil": "1.6 - 2.4 mL / 100g",
       "usage": "Bittering"
     },
@@ -2541,7 +2544,7 @@ Hop.reopenClass({
         30,
         72
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "0.7 - 1.3 mL / 100g",
       "usage": "Aroma"
     },
@@ -2616,7 +2619,7 @@ Hop.reopenClass({
       "primary_aroma": "Tropical-Fruit",
       "product_id": null,
       "secondary_aroma": "Fruity",
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "~2.2 mL / 100g",
       "usage": "Aroma"
     },
@@ -2651,7 +2654,7 @@ Hop.reopenClass({
         92,
         94
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "2.2 - 2.8 mL / 100g",
       "usage": "Bittering"
     },
@@ -2725,7 +2728,7 @@ Hop.reopenClass({
         59,
         99
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.8 - 1.3 mL / 100g",
       "usage": "Aroma"
     },
@@ -2758,7 +2761,7 @@ Hop.reopenClass({
         33,
         37
       ],
-      "teriary_aroma": "Spicy",
+      "tertiary_aroma": "Spicy",
       "toal_oil": "0.8 - 1.3 mL / 100g",
       "usage": "Aroma"
     },
@@ -2809,7 +2812,7 @@ Hop.reopenClass({
       "substitute_ids": [
         24
       ],
-      "teriary_aroma": "Citrus",
+      "tertiary_aroma": "Citrus",
       "toal_oil": "0.8 - 1.4 mL / 100g",
       "usage": "Aroma"
     },
@@ -2906,7 +2909,7 @@ Hop.reopenClass({
         45,
         91
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "0.5 - 0.9 mL / 100g",
       "usage": "Aroma"
     },
@@ -2996,7 +2999,7 @@ Hop.reopenClass({
         90,
         88
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "0.5 - 0.9 mL / 100g",
       "usage": "Aroma"
     },
@@ -3029,7 +3032,7 @@ Hop.reopenClass({
         26,
         76
       ],
-      "teriary_aroma": "Grassy",
+      "tertiary_aroma": "Grassy",
       "toal_oil": "1.0 - 1.4 mL / 100g",
       "usage": "Aroma"
     },
@@ -3175,7 +3178,7 @@ Hop.reopenClass({
         61,
         97
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "0.3 - 1.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -3200,7 +3203,7 @@ Hop.reopenClass({
       "styles": [
         "Lager"
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "~2.9 mL / 100g",
       "usage": "Aroma"
     },
@@ -3231,7 +3234,7 @@ Hop.reopenClass({
       "substitute_ids": [
         12
       ],
-      "teriary_aroma": "Stone-Fruit",
+      "tertiary_aroma": "Stone-Fruit",
       "toal_oil": "3.0 - 5.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -3262,7 +3265,7 @@ Hop.reopenClass({
       "substitute_ids": [
         24
       ],
-      "teriary_aroma": "Herbal",
+      "tertiary_aroma": "Herbal",
       "toal_oil": "0.6 - 1.0 mL / 100g",
       "usage": "Aroma"
     },
@@ -3287,7 +3290,7 @@ Hop.reopenClass({
       "styles": [
         "Pale Ale"
       ],
-      "teriary_aroma": "Tobacco/Earthy",
+      "tertiary_aroma": "Tobacco/Earthy",
       "toal_oil": "1.6 - 1.8 mL / 100g",
       "usage": "Bittering"
     },
@@ -3312,7 +3315,7 @@ Hop.reopenClass({
       "styles": [
         "Ale"
       ],
-      "teriary_aroma": "Stone-Fruit",
+      "tertiary_aroma": "Stone-Fruit",
       "toal_oil": "1.4 - 2.0 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -3337,7 +3340,7 @@ Hop.reopenClass({
       "styles": [
         "Lager"
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "3.4 - 4.0 mL / 100g",
       "usage": "Bittering"
     },
@@ -3389,7 +3392,7 @@ Hop.reopenClass({
       "primary_aroma": "Grassy",
       "product_id": null,
       "secondary_aroma": "Tropical-Fruit",
-      "teriary_aroma": "Tobacco/Earthy",
+      "tertiary_aroma": "Tobacco/Earthy",
       "toal_oil": "1.7 - 2.2 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -3477,7 +3480,7 @@ Hop.reopenClass({
         38,
         42
       ],
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "~0.8 mL / 100g",
       "usage": "Aroma"
     },
@@ -3530,7 +3533,7 @@ Hop.reopenClass({
       "substitute_ids": [
         21
       ],
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "~1.2 mL / 100g",
       "usage": "Bittering"
     },
@@ -3555,7 +3558,7 @@ Hop.reopenClass({
       "styles": [
         "Lager"
       ],
-      "teriary_aroma": "Spicy",
+      "tertiary_aroma": "Spicy",
       "toal_oil": "~1.4 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -3641,7 +3644,7 @@ Hop.reopenClass({
       "styles": [
         "Lager"
       ],
-      "teriary_aroma": "Pine",
+      "tertiary_aroma": "Pine",
       "toal_oil": "~1.2 mL / 100g",
       "usage": "Dual Purpose"
     },
@@ -3735,7 +3738,7 @@ Hop.reopenClass({
       "styles": [
         "Pale Ale"
       ],
-      "teriary_aroma": "Tobacco/Earthy",
+      "tertiary_aroma": "Tobacco/Earthy",
       "toal_oil": "~1.72 mL / 100g",
       "usage": "Aroma"
     },
@@ -3753,7 +3756,7 @@ Hop.reopenClass({
       "primary_aroma": "Tropical-Fruit",
       "product_id": null,
       "secondary_aroma": "Citrus",
-      "teriary_aroma": "Floral",
+      "tertiary_aroma": "Floral",
       "toal_oil": "~1.6 mL / 100g",
       "usage": "Aroma"
     },
@@ -3785,7 +3788,7 @@ Hop.reopenClass({
       "primary_aroma": "Floral",
       "product_id": null,
       "secondary_aroma": "Spicy",
-      "teriary_aroma": "Fruity",
+      "tertiary_aroma": "Fruity",
       "toal_oil": "2.3 mL / 100g"
     },
     {
@@ -3800,7 +3803,7 @@ Hop.reopenClass({
       "styles": [
         "Pale Ale"
       ],
-      "teriary_aroma": "Fruity"
+      "tertiary_aroma": "Fruity"
     }
   ]
 });
